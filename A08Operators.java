@@ -1,51 +1,51 @@
 public class A08Operators {
     public static void main(String[] args) {
-        /* 
+        /*
          * 
-         *    4  +  6  -  8   *   4   /   2
-         *    operand -> 2, 4, 6, 8
-         *    operator -> + - * /  
-         *  
+         * 4 + 6 - 8 * 4 / 2
+         * operand -> 2, 4, 6, 8
+         * operator -> + - * /
+         * 
          * 
          * Operators: used on operand to perform any operation
          * 1. Arithmetic operator
-         *      + Addition
-         *      - Subtraction
-         *      * Multiplication
-         *      / Division (Quotient)
-         *      % Modulo (Remainder)
+         * + Addition
+         * - Subtraction
+         * * Multiplication
+         * / Division (Quotient)
+         * % Modulo (Remainder)
          * 
          * 2. Unary Operator:
-         *      Unary Minus: -
-         *      Increment Operator: ++
-         *         ++x (PreIncrement)
-         *         x++ (PostIncrement)
-         *      Decrement Operator: --
-         *         --x (PreDecrement)
-         *         x-- (PostDecrement)
-         *      Not Operator: !
-         *      Bitwise Complement: ~
+         * Unary Minus: -
+         * Increment Operator: ++
+         * ++x (PreIncrement)
+         * x++ (PostIncrement)
+         * Decrement Operator: --
+         * --x (PreDecrement)
+         * x-- (PostDecrement)
+         * Not Operator: !
+         * Bitwise Complement: ~
          * 
          * 3. Assignment Operator: use to assign value to a variable
-         *      = => a = 9
-         *      += => a = a+9
-         *      -= => a = a-9
-         *      *= => a = a*9
-         *      /= => a = a/9
+         * = => a = 9
+         * += => a = a+9
+         * -= => a = a-9
+         * *= => a = a*9
+         * /= => a = a/9
          * 
          * 4. Relational Operator: return true or false
-         *      ==  (equal to)
-         *      <   (less than)
-         *      >   (greater than)
-         *      <=  (less than equal to)
-         *      >=  (greater than eqaul to)
-         *      !=  (not equal to)
+         * == (equal to)
+         * < (less than)
+         * > (greater than)
+         * <= (less than equal to)
+         * >= (greater than eqaul to)
+         * != (not equal to)
          * 
          * 
          * 5. Logical Operator
-         *      &&  (AND) => all true than true
-         *      ||  (OR)  => if one true than true
-         *      !   (NOT) => false if true / true if flase
+         * && (AND) => all true than true
+         * || (OR) => if one true than true
+         * ! (NOT) => false if true / true if flase
          * 
          * 
          * 6. Bitwise Operator
@@ -63,12 +63,32 @@ public class A08Operators {
         System.out.println("Addition: " + (a + b));
         System.out.println("Subraction: " + (a - b));
         System.out.println("Multiplication: " + a * b);
-        System.out.println("Division(Quotient): " + a / b);  // -> 6
-        System.out.println("Division: " + a / fval);  // -> 6.5
+        System.out.println("Division(Quotient): " + a / b); // -> 6
+        System.out.println("Division: " + a / fval); // -> 6.5
         System.out.println("Remainder: " + a % b);
         System.out.println(10 % 7); // 3
+
         System.out.println(4 % 8); // 4
         System.out.println(3 % 12); // 3
+
+        /*
+         * In more general terms, for any integer a and a positive integer b, the result
+         * of a % b is the remainder when a is divided by b. If a is less than b, the
+         * result is simply a because b cannot fit into a even once, leaving a as the
+         * remainder.
+         * 
+         *  8 % 3 = ?
+         *      |-------> 3 x __ <= 8
+         *       therefore:  3 x 2 = 6 <= 8
+         *              =>   8 - 6 = 2 => result  
+         * 
+         *  1 % 5 = ? 
+         *         |-------> 5 x __ <= 1
+         *       therefore:  5 x 0 = 0 <= 1
+         *              =>   1 - 0 = 1 => result
+         * 
+         * 
+         */
 
         System.out.println("---------------------------------------------------");
         // Increment & Decrement
@@ -136,43 +156,36 @@ public class A08Operators {
         x5 %= 3; // x5 = x5 % 3;
         System.out.println(x5);
 
-
         // ------------------------------------------------------------------------------------
         System.out.println("--------------------------------------------------------");
 
-        int y1 = 10; 
-        int y2 = 10; 
+        int y1 = 10;
+        int y2 = 10;
         int y3 = 20;
 
-        boolean res = y3>y1;
+        boolean res = y3 > y1;
         System.out.println(res);
 
-        System.out.println(y3>y1);
-        System.out.println(y3<y1);
-        System.out.println(y2<=y1);
-        System.out.println(y2>=y1);
-        System.out.println(y3>=y2);
-        System.out.println(y1!=y2);
-        System.out.println(y1!=y3);
+        System.out.println(y3 > y1);
+        System.out.println(y3 < y1);
+        System.out.println(y2 <= y1);
+        System.out.println(y2 >= y1);
+        System.out.println(y3 >= y2);
+        System.out.println(y1 != y2);
+        System.out.println(y1 != y3);
 
-
-        //---------------------------------------------------------------------
+        // ---------------------------------------------------------------------
         System.out.println("---------------------------------------------------------");
 
         // Logical operator
         int z1 = 10;
         int z2 = 2;
         int z3 = 6;
-        System.out.println(z1>z2 && z1>z3);
-        System.out.println(z1>z2 && z2>z3);
-        System.out.println(z1>z2 || z2<z3);
-        System.out.println(z1>z2 || z2>z3);
+        System.out.println(z1 > z2 && z1 > z3);
+        System.out.println(z1 > z2 && z2 > z3);
+        System.out.println(z1 > z2 || z2 < z3);
+        System.out.println(z1 > z2 || z2 > z3);
         System.out.println(!true);
-
-
-
-
-
 
     }
 }

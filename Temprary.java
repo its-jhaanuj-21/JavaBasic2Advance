@@ -69,6 +69,18 @@ public class Temprary {
         System.out.println(sdata);
 
 
+        System.out.println(12%2);
+        System.out.println(12%5);
+
+        System.out.println( 1 % 5 );
+        System.out.println( 2 % 5 );
+        System.out.println( 3 % 5 );
+        System.out.println( 4 % 5 );
+        System.out.println( 5 % 5 );
+        System.out.println( 6 % 5 );
+
+
+
 
 
 

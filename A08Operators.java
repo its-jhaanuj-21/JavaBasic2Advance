@@ -120,6 +120,33 @@ public class A08Operators {
         // 4 + 6 + 5 - 5 + 6 - 5 + 6 = 17
         System.out.println(f);
 
+        int an = 8;
+        int bb = an++ + --an + an++;
+        //        8   +   8  +  8   
+        System.out.println(bb); // 24
+        System.out.println(an); // 9
+
+
+        int xx1 = 6;
+        int zz1 = xx1++ - ++xx1 + xx1++ + --xx1;
+        //        6   -  8   +  8   +  8  
+        System.out.println(zz1); // 14
+        System.out.println(xx1);  // 8
+
+        int xx2 = 5;
+        int zz2 = xx2++ + xx2++ - --xx2 + xx2-- - xx2++;
+        //        5   + 6    -  6   +  6   -  5
+        System.out.println(zz2); // 6
+        System.out.println(xx2); // 6
+
+        int u = 3;
+        int v = 4;
+        int anu = ++u + --v - v++ + --u + ++v + u - v;
+        //        
+        System.out.println(u);   // 3
+        System.out.println(v);   // 5
+        System.out.println(anu);  // 10
+
         // ----------------------------------------------------------------------------------
         System.out.println("-------------------------------------------------");
 
@@ -163,16 +190,16 @@ public class A08Operators {
         int y2 = 10;
         int y3 = 20;
 
-        boolean res = y3 > y1;
-        System.out.println(res);
+        boolean res = y3 > y1; 
+        System.out.println(res);  // t
 
-        System.out.println(y3 > y1);
-        System.out.println(y3 < y1);
-        System.out.println(y2 <= y1);
-        System.out.println(y2 >= y1);
-        System.out.println(y3 >= y2);
-        System.out.println(y1 != y2);
-        System.out.println(y1 != y3);
+        System.out.println(y3 > y1); // t
+        System.out.println(y3 < y1); // f
+        System.out.println(y2 <= y1); // t
+        System.out.println(y2 >= y1); // t
+        System.out.println(y3 >= y2); // t
+        System.out.println(y1 != y2); // f
+        System.out.println(y1 != y3); // t
 
         // ---------------------------------------------------------------------
         System.out.println("---------------------------------------------------------");
@@ -181,7 +208,7 @@ public class A08Operators {
         int z1 = 10;
         int z2 = 2;
         int z3 = 6;
-        System.out.println(z1 > z2 && z1 > z3);
+        System.out.println(z1 > z2 && z1 > z3);  // 
         System.out.println(z1 > z2 && z2 > z3);
         System.out.println(z1 > z2 || z2 < z3);
         System.out.println(z1 > z2 || z2 > z3);

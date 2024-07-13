@@ -81,6 +81,102 @@ public class Temprary {
 
 
 
+        int an = 8;
+        int bb = an++ + --an + an++;
+        //        8   +   8  +  8   
+        System.out.println(bb); // 24
+        System.out.println(an); // 9
+
+
+        int x1 = 6;
+        int z1 = x1++ - ++x1 + x1++ + --x1;
+        //        6   -  8   +  8   +  8  
+        System.out.println(z1); // 14
+        System.out.println(x1);  // 8
+
+        int x2 = 5;
+        int z2 = x2++ + x2++ - --x2 + x2-- - x2++;
+        //        5   + 6    -  6   +  6   -  5
+        System.out.println(z2); // 6
+        System.out.println(x2); // 6
+
+
+        int u = 3;
+        int v = 4;
+        int anu = ++u + --v - v++ + --u + ++v + u - v;
+        //        
+        System.out.println(u);   // 3
+        System.out.println(v);   // 5
+        System.out.println(anu);  // 10.
+        
+
+
+
+        int zzz1 = 10;
+        zzz1 += 5;
+        zzz1 -= 5;
+        zzz1 *= 5;
+        zzz1 -= 5;
+        System.out.println(zzz1); //
+
+
+
+
+        // int age = 18;
+        int age = 19 ;
+        if(age>=18){
+            System.out.println("Adult");
+        }
+        
+        
+        int age2 = 16;
+        if(age2>=18){
+            System.out.println("Adult");
+        } else{
+            System.out.println("Not Adult");
+        }
+
+        int age3 = 69;
+        if(age3<=12){
+            System.out.println("Child");
+        } else if (age3>12 && age3<18){
+            System.out.println("Teeager");
+        } else if (age3>=18 && age3<=30) {
+            System.out.println("Adult");
+        } else if (age3>30 && age3<=50) {
+            System.out.println("Middle Age");
+        } else{
+            System.out.println("Old");
+        }
+        
+
+        // WAP to check temp 
+        //    1  - 10 -> chilled
+        //    11 - 20 -> cold
+        //    21 - 30 -> mild 
+        //    31 - 40 -> hot
+        //    41 - 50 - > very hot
+        //    50 >    -> mar hi jaoge bsdke
+
+        int num1 = 10;
+        int num2 = 20;
+
+        int res = (num1>num2) ? num1 : num2;
+        System.out.println(res + "is greatest");
+
+        String res2 = (num1>num2) ? num1 + "is greatest" : num2 + "is greatest";
+        System.out.println(res2);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

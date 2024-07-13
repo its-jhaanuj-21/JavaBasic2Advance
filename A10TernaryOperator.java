@@ -4,7 +4,7 @@ public class A10TernaryOperator {
         int a = 10;
         int b = 20;
 
-        int res = (a>b)?a:b;
+        int res = (a>b) ? a : b;
         System.out.println(res);
 
         String result = (a<b)?"a is less" : "b is less";

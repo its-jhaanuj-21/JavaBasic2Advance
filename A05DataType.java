@@ -11,8 +11,8 @@ public class A05DataType {
          * 
          * Numeric Data Type:
          * Integer Data type : by defalut int type
-         * byte : 1 Byte = 8 bit => -2^8-1 to (2^8-1)-1 => -128 to 127
-         * short : 2 Byte = 16 bit => -2^16-1 to (2^16-1)-1 => -32768 to 32767
+         * byte : 1 Byte = 8 bit => -2^(8-1) to (2^(8-1))-1 => -128 to 127
+         * short : 2 Byte = 16 bit => -2^(16-1) to (2^(16-1))-1 => -32768 to 32767
          * int : 4 Byte = 32 bit => -2^32-1 to (2^32-1)-1 => -2147483648 to 2147483647
          * long : 8 Byte = 64 bit => -2^64-1 to (2^64-1)-1 => -9223372036854775808 to
          * 9223372036854775807
@@ -38,9 +38,10 @@ public class A05DataType {
         // byte byteNum3 = -129; // Error: Type mismatch: cannot convert from int to
         // byte
         // Note : By default every integer type number is of 'int' type.
-        System.out.println(byteNum1);
-        System.out.println(byteNum2);
+        System.out.println(byteNum1);  // -128
+        System.out.println(byteNum2);  // 127
         System.out.println(((Object) byteNum1).getClass().getSimpleName()); // Return the data type of variable
+        // Object class is the superclass of All classes in java
         System.out.println(Byte.SIZE); // Return size in bits
         System.out.println(Byte.BYTES); // Return Size in Bytes
         System.out.println(Byte.MIN_VALUE);
@@ -97,6 +98,39 @@ public class A05DataType {
         System.out.println(((Object) (a + b)).getClass().getSimpleName()); // Integer
         int c = a + b;
 
+        //--------------------------------------------------------------------
+        byte n1 = 34;
+        short n2 = 23;
+        // short sum = n1+n2;    // TypeMishmatched Error : cannot convert from int to short
+        int sum = n1+n2;  // short + byte --> return int  (implicite type conversion)
+        System.out.println(((Object)sum).getClass().getSimpleName());
+
+        
+        byte s1 = 23;
+        short s2 = 33;
+        int s3 = 78;
+        long s4 = 999;
+        // int sum2  = s1+s2+s3+s4;  // TypeMishmatched Error : cannot convert from long to int
+        long sum2  = s1+s2+s3+s4;  // short+byte+int+long => long
+        System.out.println(((Object)sum2).getClass().getSimpleName());
+
+        //--------------------------------------------------------------------
+
+         /*
+         *   short +  byte   -> int 
+         *   byte + byte  -> int 
+         *   short + short  -> int 
+         *   int + int -> int 
+         *   int + short  -> int 
+         *   short + long  -> long
+         *   int + short + long -> long
+         * 
+         * 
+         * 
+         */
+
+
+
         // ------------------------------------------------------------------------------
 
         // float:
@@ -125,6 +159,17 @@ public class A05DataType {
         System.out.println(Double.MAX_VALUE);
         System.out.println(Double.TYPE);
 
+        //-------------------------------------------------------------
+
+        int intval = 55;
+        float fval = 5.0f;
+        long lval = 1200;
+        float sum3 = intval+fval+lval;     // float
+        System.out.println(sum3);
+        System.out.println(((Object)sum3).getClass().getSimpleName());
+
+
+
         // -------------------------------------------------------------
 
         // boolean
@@ -146,6 +191,16 @@ public class A05DataType {
         System.out.println(Character.BYTES);
         System.out.println(Character.MIN_VALUE); // blank space " "
         System.out.println(Character.MAX_VALUE); // ?
+
+
+        //-------------------------------------------------------------
+
+        char c1 = 'A';   // 65
+        int abcd = 1;
+        System.out.println(c1);
+        System.out.println(c1+abcd);
+        System.out.println(((Object)(c1+abcd)).getClass().getSimpleName()); // return INT
+        //-------------------------------------------------------------
 
     }
 }

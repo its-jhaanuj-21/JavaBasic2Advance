@@ -29,7 +29,7 @@ public class A06TypeCastingAndTruncation {
 
         byte a=10;   // 2 byte
         char b = 'A'; // 2 byte
-        short c=20;; // 4 byte
+        short c = 20;; // 4 byte
         int d = 344;  // 4 byte
         long e = 8378l; // 8 byte
         float f = 4.5f;  // 4 byte
@@ -37,16 +37,18 @@ public class A06TypeCastingAndTruncation {
 
         g = f; // storing float in double
         System.out.println(g);
-        f=e; // storing long in float
+        f = e; // storing long in float
         System.out.println(f);
         e = d; // storing int in long
         System.out.println(e);
         d = c; // storing short in int
         System.out.println(d);
+
         /********************************************************** */
-        // c = b; // we cannot convert char to short;
-        // b = a; // Cannot convert byte to char
+        // c = b; // we cannot convert char to short; // This is because char in Java is an unsigned 16-bit data type, while short is a signed 16-bit data type.
+        // b = a; // Cannot convert byte to char  // This is because byte is an 8-bit signed data type, while char is a 16-bit unsigned data type.
         /********************************************************* */
+
         c = a;  // storing byte in short 
         System.out.println(c);
 

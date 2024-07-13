@@ -8,6 +8,7 @@ public class A01HelloWorld{
     // public static void main(String[] args) {
     // public static void main(String args[]) {
     // static public void main(String args[]) {
+    // static public void main(String myargs[]) {
     static public void main(String... args) {
         // Print statement 
         System.out.println("Hello World");

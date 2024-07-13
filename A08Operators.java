@@ -1,6 +1,12 @@
 public class A08Operators {
     public static void main(String[] args) {
-        /*
+        /* 
+         * 
+         *    4  +  6  -  8   *   4   /   2
+         *    operand -> 2, 4, 6, 8
+         *    operator -> + - * /  
+         *  
+         * 
          * Operators: used on operand to perform any operation
          * 1. Arithmetic operator
          *      + Addition
@@ -53,10 +59,12 @@ public class A08Operators {
         // Arithemetic
         int a = 13;
         int b = 2;
+        float fval = 2.0f;
         System.out.println("Addition: " + (a + b));
         System.out.println("Subraction: " + (a - b));
         System.out.println("Multiplication: " + a * b);
-        System.out.println("Division(Quotient): " + a / b);
+        System.out.println("Division(Quotient): " + a / b);  // -> 6
+        System.out.println("Division: " + a / fval);  // -> 6.5
         System.out.println("Remainder: " + a % b);
         System.out.println(10 % 7); // 3
         System.out.println(4 % 8); // 4

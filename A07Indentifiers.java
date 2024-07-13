@@ -23,6 +23,64 @@ public class A07Indentifiers {
          * Variable name should be written in camelCase : firstName, sumOfNumber
          * function name should be written in camelcase : getName(), setValues()
          * 
+         *      snake_case -> first_name -> Python follows snake_case
+         * 
+         * 
+         * Reserved words / keywords: 
+         *      abstract
+                assert
+                boolean
+                break
+                byte
+                case
+                catch
+                char
+                class
+                const (reserved, not used)
+                continue
+                default
+                do
+                double
+                else
+                enum
+                extends
+                final
+                finally
+                float
+                for
+                goto (reserved, not used)
+                if
+                implements
+                import
+                instanceof
+                int
+                interface
+                long
+                native
+                new
+                null
+                package
+                private
+                protected
+                public
+                return
+                short
+                static
+                strictfp
+                super
+                switch
+                synchronized
+                this
+                throw
+                throws
+                transient
+                try
+                void
+                volatile
+                while
+                In addition to these, the literals true, false, and null are also reserved but considered literals rather than keywords​
+         * 
+         * 
          */
     }
 }

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Temprary {
     public static void main(String[] args) {
         System.out.println(23); // int 
@@ -219,6 +221,149 @@ public class Temprary {
          System.out.println("number_1: " + number_1);
          System.out.println("number_2: " + number_2);
 
+
+
+
+
+
+        for(int i=1; i<=5; i++){
+            System.out.println("Anuj");
+        }
+
+        for(int i=1; i<=5; i++){
+            System.out.println(i);
+        }
+        /*
+         * i = 1    i<=5(True)  => Enter into loop
+         *     print(i) 1     increase i by 1 =>  i++ => i = 2
+         * 
+         * i = 2    i<=5(True)  => Enter into loop
+         *     print(i) 2     increase i by 1 =>  i++ => i = 3
+         * 
+         * i = 3    i<=5(True)  => Enter into loop 
+         *     print(i) 3     increase i by 1 =>  i++ => i = 4
+         * 
+         * i = 4    i<=5(True)  => Enter into loop 
+         *     print(i) 4     increase i by 1 =>  i++ => i = 5
+         * 
+         * i = 5    i<=5(True)  => Enter into loop 
+         *     print(i) 5     increase i by 1 =>  i++ => i = 6
+         * 
+         * i = 6    i<=5(False) => Exit the loop 
+         * 
+         */
+
+
+        for(int i = 1 ; i<=10; i++){    // i = i+1
+            if(i % 2 == 0){
+                System.out.println(i);
+            }
+        }
+
+        
+        for(int i = 2; i<=10; i=i+2){
+            System.out.println(i);
+        }
+        
+        System.out.println("--------------------------");
+        
+        for(int i=10; i>=1; i--){   // i-- => i = i-1
+            System.out.println(i);
+        }
+
+
+        for(int i=10; i>=1; i=i-2){
+            System.out.println(i);
+        }
+
+
+
+        System.out.println("------while---------");
+        int i = 0;
+        while(i<=5){
+            System.out.println(i);
+            i++;  // i = i+1;
+        }
+
+
+        int i1 = 10;
+        while(i1>=1){
+            System.out.println(i1);
+            i1--;
+        }
+
+        int i2 = 1;
+        while (i2<=5) {
+            System.out.print(i2+" ");          // 1 2 3 4 5
+            i2++;
+        }
+        System.out.println();
+
+
+        System.out.println("-------do-while()-------");
+
+        int i4 = 0;
+        do{
+            System.out.println(i4);
+            i4++;  // i = i+1;
+        }while(i4<=5);
+
+
+        System.out.println("-------Scanner---------");
+
+        Scanner scn =  new Scanner(System.in);
+        // System.out.print("Enter Integer: ");
+        // int inputInteger1 = scn.nextInt();
+        // System.out.println("Inputed Integer: "+inputInteger1);
+        
+        // System.out.print("Enter float: ");
+        // float inputfloat1 = scn.nextFloat();
+        // System.out.println("Inputed Float: "+inputfloat1);
+        
+        // System.out.print("Enter String: ");
+        // String inputString = scn.next();   // It doesn't accept white space
+        // System.out.println("Inputed String: "+inputString);
+        
+        // // scn.nextLine();
+        
+        // System.out.print("Enter String with white space: ");
+        // String inputString2 = scn.nextLine();   
+        // System.out.println("Inputed String: "+inputString2);
+        
+        // System.out.print("Enter String: ");
+        // String inputString44 = scn.next();   // It doesn't accept white space
+        // System.out.println("Inputed String: "+inputString44);
+
+        System.out.println("Enter an integer: ");
+        int number = scn.nextInt(); // Reads the integer, but not the newline
+        
+        scn.nextLine();
+
+        System.out.println("Enter a string: ");
+        String text = scn.nextLine(); // Reads the leftover newline
+        
+        System.out.println("Number: " + number);
+        System.out.println("Text: " + text); // text will be empty
+
+
+        // scn.nextInt();  //-> int
+        // scn.nextByte(); //-> byte
+        // scn.nextShort(); //-> short
+        // scn.nextLong(); //-> long
+        // scn.nextFloat(); //-> float
+        // scn.nextDouble(); //-> double
+        // scn.next();       //-> String without white Space
+        // scn.nextLine();   //-> String with white Space
+        // scn.nextBoolean(); //-> boolean value
+        
+
+        System.out.println("Enter Character: ");
+        char ch = scn.next().charAt(0);
+        System.out.println(ch);
+        
+        
+        
+        
 
 
 

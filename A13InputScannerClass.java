@@ -26,6 +26,17 @@ public class A13InputScannerClass {
         char ch = scan.next().charAt(0);
         System.out.println("Character is: "+ch);
 
+
+        // scn.nextInt();  //-> int
+        // scn.nextByte(); //-> byte
+        // scn.nextShort(); //-> short
+        // scn.nextLong(); //-> long
+        // scn.nextFloat(); //-> float
+        // scn.nextDouble(); //-> double
+        // scn.next();       //-> String without white Space
+        // scn.nextLine();   //-> String with white Space
+        // scn.nextBoolean(); //-> boolean value
+        // scn.next().charAt(); //-> character
     }
 
 }

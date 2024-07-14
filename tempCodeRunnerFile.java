@@ -1,1 +1,1 @@
-i
+tring text = scn.nextLine();

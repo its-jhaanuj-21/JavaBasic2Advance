@@ -279,11 +279,11 @@ public class Temprary {
 
 
         System.out.println("------while---------");
-        int i = 0;
-        while(i<=5){
-            System.out.println(i);
-            i++;  // i = i+1;
-        }
+        // int i = 0;
+        // while(i<=5){
+        //     System.out.println(i);
+        //     i++;  // i = i+1;
+        // }
 
 
         int i1 = 10;
@@ -334,16 +334,16 @@ public class Temprary {
         // String inputString44 = scn.next();   // It doesn't accept white space
         // System.out.println("Inputed String: "+inputString44);
 
-        System.out.println("Enter an integer: ");
-        int number = scn.nextInt(); // Reads the integer, but not the newline
+        // System.out.println("Enter an integer: ");
+        // int number = scn.nextInt(); // Reads the integer, but not the newline
         
-        scn.nextLine();
+        // scn.nextLine();
 
-        System.out.println("Enter a string: ");
-        String text = scn.nextLine(); // Reads the leftover newline
+        // System.out.println("Enter a string: ");
+        // String text = scn.nextLine(); // Reads the leftover newline
         
-        System.out.println("Number: " + number);
-        System.out.println("Text: " + text); // text will be empty
+        // System.out.println("Number: " + number);
+        // System.out.println("Text: " + text); // text will be empty
 
 
         // scn.nextInt();  //-> int
@@ -357,11 +357,64 @@ public class Temprary {
         // scn.nextBoolean(); //-> boolean value
         
 
-        System.out.println("Enter Character: ");
-        char ch = scn.next().charAt(0);
-        System.out.println(ch);
+        // System.out.println("Enter Character: ");
+        // char ch = scn.next().charAt(0);
+        // System.out.println(ch);
         
+
+
+
+        System.out.println("------------Pattern--------------");
+        /*
+         *    * * * *
+         *    * * * *
+         *    * * * *
+         *    * * * *
+         */
+        for(int row=1; row<=4; row++){
+            for(int col=1; col<=4; col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        /*
+         *   *
+         *   * *
+         *   * * *
+         *   * * * *
+         * 
+         */
+
+        for(int row=1; row<=4; row++){
+            for(int col=1; col<=row; col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
         
+        System.out.println();
+
+        /*
+                * * * *
+                * * *
+                * *
+                *
+         */
+        for(int row=4; row>=1; row--){
+            for(int col=1; col<=row; col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+
+
+
+
+
         
         
 

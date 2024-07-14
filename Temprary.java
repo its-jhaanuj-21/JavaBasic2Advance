@@ -169,14 +169,55 @@ public class Temprary {
 
 
 
+        int gcdnum1 = 8;
+        int gcdnum2 = 6;
+        int product = gcdnum1*gcdnum2;
+
+        while(gcdnum2 != 0){
+            if(gcdnum1>gcdnum2){
+                gcdnum1 = gcdnum1-gcdnum2;
+            }else{
+                gcdnum2 = gcdnum2-gcdnum1;
+            }
+        }
+
+        // while(gcdnum2!=0){
+        //     int temp = gcdnum2;
+        //     gcdnum1 = gcdnum1%gcdnum2;
+        // }
 
 
+        System.out.println("GCD: "+gcdnum1);
+        System.out.println("LCM: "+product/gcdnum1);
+        /*         
+                     n1           n2          while n2!=0
+                     8             6           6!=0  True
+        n1>n2 -> 8-6=2             6           6!=0  True
+        n1<n2 ->     2        6-2= 4           4!=0  True
+        n1<n2        2        4-2= 2           2!=0  True
+        n1=n2        2        2-2= 0           0!=0  False
+               
+
+        lcm = Product of two num / HCF
+        
+        num1xnum2 = HCFxLCM
+
+         */
 
 
+         int number_1 = 6;
+         int number_2 = 4;
 
+        //  number_1 = number_1 + number_2;  // n1 = 6+4 = 10
+        //  number_2 = number_1 - number_2;  // n2 = 10-4 = 6
+        //  number_1 = number_1 - number_2;  // n1 = 10-6 = 4
+         
+         number_1 = number_1 * number_2;  // n1 = 6*4 = 24
+         number_2 = number_1 / number_2;  // n2 = 24/4 = 6
+         number_1 = number_1 / number_2;  // n1 = 24/6 = 4
 
-
-
+         System.out.println("number_1: " + number_1);
+         System.out.println("number_2: " + number_2);
 
 
 

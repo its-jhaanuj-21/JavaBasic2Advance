@@ -37,6 +37,8 @@ public class A13InputScannerClass {
         // scn.nextLine();   //-> String with white Space
         // scn.nextBoolean(); //-> boolean value
         // scn.next().charAt(); //-> character
+
+        scan.close();
     }
 
 }

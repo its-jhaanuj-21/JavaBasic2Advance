@@ -1,0 +1,105 @@
+WAP to print avg of two number
+WAP to print avg of three number
+
+WAP to print Area of a Square 
+WAP to print perimeter of a Square
+WAP to print Area of a rectangle 
+WAP to print perimeter of a rectangle
+WAP to print Area of a circle
+WAP to print perimeter of a circle
+WAP to print Area of a Triangle
+WAP to print Area of a Trapezium 
+WAP to print Area of a Parllelogram 
+WAP to print Area of a Rhombus
+WAP to print volume of Cube 
+WAP to print volume of Cuboid 
+WAP to print volume of Cone
+WAP to print volume of Cylinder
+
+WAP to find %age of 5 subject [each MAX marks - 100]
+
+WAP to find the distance b/w two point
+
+WAP to calculate SI 
+WAP to calculate CI 
+
+WAP to swap two numbers using 3rd variable 
+WAP to swap two numbers without using 3rd variable
+
+WAP to print HCF/GCD of a number 
+WAP to print LCM of a number 
+
+WAP to check Leap year
+
+WAP to check +ve and -ve number
+
+WAP to check even or odd using conditional statement  
+WAP to check even or odd using ternary opeartor  
+
+WAP to check smallest of two numbers using conditional statement
+WAP to check smallest of two numbers using ternary opeartor
+
+WAP to check greatest of three numbers using conditional statement
+WAP to check greatest of three numbers using ternary opeartor
+
+WAP to print grade of student: 
+        91 to 100 -> A+
+        81 to 90 -> A
+        71 to 80 -> B+
+        61 to 70 -> B
+        51 to 60 -> C+
+        41 to 50 -> C
+        31 to 40 -> D+
+        less 30  -> D
+
+WAP to classify a person's BMI (Body Mass Index) based on their weight (in kilograms) and height (in meters):
+        BMI Formula: 
+        BMI=weight/height^2
+        Categories:
+        BMI less than 18.5: Underweight
+        BMI 18.5 to 24.9: Normal Weight
+        BMI 25.0 to 29.9: Overweight
+        BMI 30.0 or greater: Obese
+
+
+WAP to determine the type of a triangle based on its sides:
+        Given three integers representing the sides of a triangle (side1, side2, side3), classify the triangle as:
+        Equilateral: All three sides are equal.
+        Isosceles: Exactly two sides are equal.
+        Scalene: All three sides are different.
+
+
+WAP to calculate the electricity bill for a household on basic of units consumed:
+Calculate the total electricity bill based on the following tariff rates:
+        First 100 units: ₹5 per unit
+        Next 200 units (101 to 300): ₹7 per unit
+        Beyond 300 units: ₹10 per unit
+
+
+WAP to find the ASCII code of character
+
+WAP to Check Whether a Character is a Vowel or Consonant
+
+WAP Check Whether a Character is an Alphabet or Not
+
+
+
+----------------------------------------------------------------------
+
+
+WAP to print from 1 to 10
+
+WAP to print even number from 1 to 20 using [ for / while / do while]
+WAP to print odd number from 1 to 20 using [ for / while / do while]
+
+
+
+
+
+
+
+
+
+
+
+

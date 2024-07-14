@@ -371,8 +371,9 @@ public class Temprary {
          *    * * * *
          *    * * * *
          */
-        for(int row=1; row<=4; row++){
-            for(int col=1; col<=4; col++){
+        int val = 5;
+        for(int row=1; row<=val; row++){
+            for(int col=1; col<=val; col++){
                 System.out.print("* ");
             }
             System.out.println();
@@ -409,6 +410,58 @@ public class Temprary {
             }
             System.out.println();
         }
+
+
+        System.out.println();
+
+
+         /*
+         *  col=1 2 3 4 5 6
+          row=1 * * * * * *
+         *    2 *         *
+         *    3 *         *     stars at : row=1, col=1
+         *    4 *         *     ends at  : row=6, col=6
+         *    5 *         * 
+         *    6 * * * * * * 
+         */
+
+         for(int row=1; row<=6; row++){
+            for(int col=1; col<=6; col++){
+                if(row==1 || row==6 || col==1 || col==6){
+                    System.out.print("* ");
+                }else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+         }
+
+
+
+         /*            j=(n-1)/2
+         *          j=0   |   j=n-1
+         *  i=0       * * * * *
+         *            *       *
+         *  i=(n-1)/2 * * * * *  -> 2
+         *            *       *
+         *  i=n-1     *       *
+         * 
+         * 
+         */
+
+         int val5 = 7;
+         for(int row=0; row<val5; row++){
+            for(int col=0; col<val5; col++){
+                if(row == 0 || col == 0 || col == val5-1 || row==(val5-1)/2 || row==val5-1 || col==(val5-1)/2){
+                    System.out.print("* ");
+                }else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+         }
+
+
 
 
 
